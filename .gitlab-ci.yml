@@ -1,0 +1,63 @@
+.all_common: &all_common
+  before_script:
+    - apt-get -qqq update
+    - rosdep update
+    - mkdir -p src/contracts_lite_vendor && mv `find -maxdepth 1 -not -name . -not -name src` src/contracts_lite_vendor/
+    - rosdep install --from-path src --ignore-src -y
+
+.build_common: &build_common
+  << : *all_common
+  script:
+    - apt-get -qqq update
+    - rosdep update
+    - colcon build
+
+build_amd64:
+  image: ros:dashing-ros-base
+  << : *build_common
+  except:
+    - schedules
+    - web
+
+build_arm64:
+  tags:
+    - arm64
+  image: ros:dashing-ros-base
+  << : *build_common
+  except:
+    - schedules
+    - web
+
+build_debian_amd64:
+  image: ros:dashing-ros-base
+  << : *all_common
+  script:
+    - apt-get install -y dh-make python-bloom
+    - cd src/contracts_lite_vendor
+    - bloom-generate rosdebian --os-name ubuntu --os-version bionic --ros-distro dashing .
+    - fakeroot debian/rules binary
+    - cd .. && mv *.deb ..
+  artifacts:
+    name: 'contracts_lite_vendor_debian-amd64'
+    paths: ['*.deb']
+  only:
+    - schedules
+    - web
+
+build_debian_arm64:
+  tags:
+    - arm64
+  image: ros:dashing-ros-base
+  << : *all_common
+  script:
+    - apt-get install -y dh-make python-bloom
+    - cd src/contracts_lite_vendor
+    - bloom-generate rosdebian --os-name ubuntu --os-version bionic --ros-distro dashing .
+    - fakeroot debian/rules binary
+    - cd .. && mv *.deb ..
+  artifacts:
+    name: 'contracts_lite_vendor_debian-arm64'
+    paths: ['*.deb']
+  only:
+    - schedules
+    - web
