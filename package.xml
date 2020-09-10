@@ -2,15 +2,15 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>contracts_lite_vendor</name>
-  <version>0.3.1</version>
+  <version>0.3.2</version>
   <description>ROS 2 wrapper for the Contracts Lite project.</description>
   <author email="jeff@mapless.ai">Jeffrey Kane Johnson</author>
   <maintainer email="jeff@mapless.ai">Jeffrey Kane Johnson</maintainer>
   <license>Apache License 2.0</license>
 
-  <url type="bugtracker">https://gitlab.com/MaplessAI/external/contracts_lite/-/issues</url>
-  <url type="repository">https://gitlab.com/MaplessAI/external/contracts_lite.git</url>
-  <url type="website">https://gitlab.com/MaplessAI/external/contracts_lite</url>
+  <url type="bugtracker">https://github.com/ros-safety/contracts_lite_vendor/issues</url>
+  <url type="repository">https://github.com/ros-safety/contracts_lite_vendor.git</url>
+  <url type="website">https://github.com/ros-safety/contracts_lite_vendor</url>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 

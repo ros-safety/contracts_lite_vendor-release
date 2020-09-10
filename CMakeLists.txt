@@ -16,8 +16,8 @@ set(contracts_lite_DESTDIR ${CMAKE_CURRENT_BINARY_DIR}/contracts_lite_install)
 
 include(ExternalProject)
 ExternalProject_Add(contracts_lite
-  GIT_REPOSITORY https://gitlab.com/MaplessAI/external/contracts_lite.git
-  GIT_TAG 0.3.1
+  GIT_REPOSITORY https://github.com/ros-safety/contracts_lite.git
+  GIT_TAG 0.3.2
   GIT_SHALLOW TRUE
   BUILD_IN_SOURCE TRUE
   INSTALL_DIR ${contracts_lite_DESTDIR}
