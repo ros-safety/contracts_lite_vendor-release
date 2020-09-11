@@ -1,0 +1,12 @@
+Source: ros-dashing-contracts-lite-vendor
+Section: misc
+Priority: optional
+Maintainer: Jeffrey Kane Johnson <jeff@mapless.ai>
+Build-Depends: debhelper (>= 9.0.0), ros-dashing-ament-cmake, ros-dashing-ros-workspace
+Homepage: https://github.com/ros-safety/contracts_lite_vendor
+Standards-Version: 3.9.2
+
+Package: ros-dashing-contracts-lite-vendor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-dashing-ros-workspace
+Description: ROS 2 wrapper for the Contracts Lite project.
