@@ -2,6 +2,22 @@
 Changelog for package contracts_lite_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.4.1 (2020-10-26)
+------------------
+* Vendor package update
+
+  * Add install instructions to README (`#8 <https://github.com/ros-safety/contracts_lite_vendor/pull/8>`_)
+
+* Library update
+
+  * Add missing inclue, re-arrange move statement (`#13 <https://github.com/ros-safety/contracts_lite/pull/13>`_)
+  * Add note clarifying 'audit' term (`#12 <https://github.com/ros-safety/contracts_lite/pull/12>`_)
+  * Add basic requirements (`#10 <https://github.com/ros-safety/contracts_lite/pull/10>`_)
+  * Prettier joining of comments (`#9 <https://github.com/ros-safety/contracts_lite/pull/9>`_)
+  * Add contact info to README (`#8 <https://github.com/ros-safety/contracts_lite/pull/8>`_)
+  * Enforce that audit macros assume ownership of ReturnStatus (`#6 <https://github.com/ros-safety/contracts_lite/pull/6>`_)
+
+
 0.4.0 (2020-09-21)
 ------------------
 * Library update: (`#5 <https://github.com/ros-safety/contracts_lite/pull/5>`_)
