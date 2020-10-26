@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>contracts_lite_vendor</name>
-  <version>0.4.0</version>
+  <version>0.4.1</version>
   <description>ROS 2 wrapper for the Contracts Lite project.</description>
   <author email="jeff@mapless.ai">Jeffrey Kane Johnson</author>
   <maintainer email="jeff@mapless.ai">Jeffrey Kane Johnson</maintainer>
