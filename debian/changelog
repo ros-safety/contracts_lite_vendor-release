@@ -1,0 +1,79 @@
+ros-foxy-contracts-lite-vendor (0.5.0-1focal) focal; urgency=high
+
+  * Library update: Add contract types (#14 <https://github.com/ros-safety/contracts_lite/pull/14>)
+    
+      * rename contract_types.hpp to operators.hpp
+      * edit testing instructions in readme
+      * add helper types and tests
+      * update documentation
+      * add requirements docs
+      * remove assertions.hpp and scalar_flicker.hpp; too specific for this library
+    
+
+ -- Jeffrey Kane Johnson <jeff@mapless.ai>  Fri, 12 Feb 2021 05:00:00 -0000
+
+ros-foxy-contracts-lite-vendor (0.4.1-1focal) focal; urgency=high
+
+  * Vendor package update
+    
+      * Add install instructions to README (#8 <https://github.com/ros-safety/contracts_lite_vendor/pull/8>)
+    
+  * Library update
+    
+      * Add missing inclue, re-arrange move statement (#13 <https://github.com/ros-safety/contracts_lite/pull/13>)
+      * Add note clarifying 'audit' term (#12 <https://github.com/ros-safety/contracts_lite/pull/12>)
+      * Add basic requirements (#10 <https://github.com/ros-safety/contracts_lite/pull/10>)
+      * Prettier joining of comments (#9 <https://github.com/ros-safety/contracts_lite/pull/9>)
+      * Add contact info to README (#8 <https://github.com/ros-safety/contracts_lite/pull/8>)
+      * Enforce that audit macros assume ownership of ReturnStatus (#6 <https://github.com/ros-safety/contracts_lite/pull/6>)
+    
+
+ -- Jeffrey Kane Johnson <jeff@mapless.ai>  Mon, 26 Oct 2020 04:00:00 -0000
+
+ros-foxy-contracts-lite-vendor (0.4.0-1focal) focal; urgency=high
+
+  * Library update: (#5 <https://github.com/ros-safety/contracts_lite/pull/5>)
+    
+      * Move-optimize comment string handling
+      * Make string serializer for contract violation objects static
+      * Move-optimize return status object in enforcement macro
+      * Add CONTRACT_COMMENT macro and update readme
+    
+
+ -- Jeffrey Kane Johnson <jeff@mapless.ai>  Mon, 21 Sep 2020 04:00:00 -0000
+
+ros-foxy-contracts-lite-vendor (0.3.3-1focal) focal; urgency=high
+
+  * Library update: (#4 <https://github.com/ros-safety/contracts_lite/pull/4>)
+    
+      * Make includes more consistent
+      * Use the gcc_7x to_string function
+    
+  * Contributors: Jeffrey Kane Johnson
+
+ -- Jeffrey Kane Johnson <jeff@mapless.ai>  Wed, 16 Sep 2020 04:00:00 -0000
+
+ros-foxy-contracts-lite-vendor (0.3.2-1focal) focal; urgency=high
+
+  * Delete .gitlab-ci.yml (#3 <https://github.com/ros-safety/contracts_lite_vendor/issues/3>)
+  * point to github repo, bump version
+  * Add link to original contracts_lite project in readme (#2 <https://github.com/ros-safety/contracts_lite_vendor/issues/2>)
+  * Contributors: Jeffrey Kane Johnson
+
+ -- Jeffrey Kane Johnson <jeff@mapless.ai>  Thu, 10 Sep 2020 04:00:00 -0000
+
+ros-foxy-contracts-lite-vendor (0.3.1-1focal) focal; urgency=high
+
+  * update to 0.3.1: Replace '+' operator for ReturnStatus types with '&&'; add '||' operator
+  * Contributors: Jeffrey Kane Johnson
+
+ -- Jeffrey Kane Johnson <jeff@mapless.ai>  Sat, 29 Aug 2020 04:00:00 -0000
+
+ros-foxy-contracts-lite-vendor (0.2.0-1focal) focal; urgency=high
+
+  * update contracts_lite to 0.2.0
+  * Contributors: Jeffrey Kane Johnson
+
+ -- Jeffrey Kane Johnson <jeff@mapless.ai>  Mon, 17 Aug 2020 04:00:00 -0000
+
+
