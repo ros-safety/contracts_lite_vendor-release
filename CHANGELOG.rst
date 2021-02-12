@@ -2,6 +2,17 @@
 Changelog for package contracts_lite_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.5.0 (2021-02-12)
+------------------
+* Library update: Add contract types (`#14 <https://github.com/ros-safety/contracts_lite/pull/14>`_)
+
+  * rename contract_types.hpp to operators.hpp
+  * edit testing instructions in readme
+  * add helper types and tests
+  * update documentation
+  * add requirements docs
+  * remove assertions.hpp and scalar_flicker.hpp; too specific for this library
+
 0.4.1 (2020-10-26)
 ------------------
 * Vendor package update
