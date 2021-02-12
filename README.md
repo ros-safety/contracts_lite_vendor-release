@@ -1,3 +1,26 @@
+## contracts_lite_vendor (foxy) - 0.5.0-1
+
+The packages in the `contracts_lite_vendor` repository were released into the `foxy` distro by running `/usr/bin/bloom-release --track foxy --ros-distro foxy contracts_lite_vendor` on `Fri, 12 Feb 2021 18:50:44 -0000`
+
+The `contracts_lite_vendor` package was released.
+
+Version of package(s) in repository `contracts_lite_vendor`:
+
+- upstream repository: https://github.com/ros-safety/contracts_lite_vendor.git
+- release repository: https://github.com/ros-safety/contracts_lite_vendor-release.git
+- rosdistro version: `0.4.1-1`
+- old version: `0.4.1-1`
+- new version: `0.5.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.1`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.20.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## contracts_lite_vendor (foxy) - 0.4.1-1
 
 The packages in the `contracts_lite_vendor` repository were released into the `foxy` distro by running `/usr/bin/bloom-release --track foxy --ros-distro foxy contracts_lite_vendor` on `Mon, 26 Oct 2020 13:32:15 -0000`
